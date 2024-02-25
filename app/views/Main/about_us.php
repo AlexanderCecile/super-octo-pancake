@@ -13,3 +13,7 @@
 <?php
 echo(__FILE__);
 ?>
+<h1>About us</h1>
+<p>see our incredible team of dev</p>
+
+<h3>Insert pictures here</h3>
