@@ -12,12 +12,17 @@ class App {
     function __construct() {
         $url = $_GET['url'];
 
-        //defined a few routes "url"=>"controller,method"
-        $routes = [];
+        $routes = [
+        	'Main/index'=>'Main,index',
+        	'Main/about_us'=>'Main,about_us',
+        	'Contact/index'=>'Contact,index',
+        	'Contact/read'=>'Contact,read',
+        	'Count/index'=>'Count,index'
+        ];
 
         //one by one compare the url to resolve the route
         foreach ($routes as $routeUrl => $controllerMethod) {
-            if ($url == $routeUrl) {//match the route
+            if ($url == $routeUrl) {
                 //run the route
                 [$controller,$method] = explode(',', $controllerMethod);
                 $controller = '\\app\\controllers\\'.$controller;

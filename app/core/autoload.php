@@ -1,5 +1,5 @@
-# From https://github.com/paquettm/eComH24S1
 <?php
+# From https://github.com/paquettm/eComH24S1
 //to avoid including/requiring all our controller and model classes...
 spl_autoload_register(
     function($class_name){
