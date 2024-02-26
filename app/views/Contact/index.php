@@ -6,15 +6,13 @@
 <body>
 	<header>
 		<?php
-		include(__DIR__ . '/../Shared/navigation.php');
+		readfile(__DIR__ . '/../Shared/navigation.html');
 		?>
 	</header>
-</body>
-<?php
-echo(__FILE__);
-?>
+
 <h1>Contact us</h1>
 <p>Wanna reach us? write your email information and message in the following form and then submit</p>
+
 <form action="" method="post">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -26,3 +24,5 @@ echo(__FILE__);
 
         <input type="submit" value="Submit">
     </form>
+
+</body>

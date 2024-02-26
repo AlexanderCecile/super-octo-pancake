@@ -6,13 +6,9 @@
 <body>
 	<header>
 		<?php
-		include(__DIR__ . '/../Shared/navigation.php');
+		readfile(__DIR__ . '/../Shared/navigation.html');
 		?>
 	</header>
-</body>
-<?php
-echo(__FILE__);
-?>
 <h1>Messages</h1>
 <p>messages will appear here<p>
-
+</body>

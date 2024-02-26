@@ -6,16 +6,11 @@
 <body>
 	<header>
 		<?php
-		include(__DIR__ . '/../Shared/navigation.php');
+		readfile(__DIR__ . '/../Shared/navigation.html');
 		?>
 	</header>
-</body>
-<?php
-echo(__FILE__);
-?>
-<h1>Landing Page</h1>
-<p>Welcome to this Web application</p>
+
+<h1>Welcome to this Web application</h1>
 <p>We aim to please</p>
 
-
-
+</body>
