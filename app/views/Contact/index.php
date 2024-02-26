@@ -14,23 +14,23 @@
 	<p>Wanna reach us? write your email information and message in the following form and then submit</p>
 
 	<form action="/Contact/send_msg" method="post">
-		<ul>
-			<li>
+		<fieldset>
+			<p>
 				<label for="name_input">Name: </label>
 				<input id="name_input" type="text" name="name">
-			</li>
-			<li>
+			</p>
+			<p>
 				<label for="email_input">Email: </label>
 				<input id="email_input" type="email" name="email">
-			</li>
-			<li>
+			</p>
+			<p>
 				<label for="msg_content_input">Message: </label>
 				<input id="msg_content_input" type="textarea" name="msg_content">
-			</li>
-			<li>
+			</p>
+			<p>
 				<input type="submit" value="Send">
-			</li>
-		</ul>
+			</p>
+		</fieldset>
 
 	</form>
 
