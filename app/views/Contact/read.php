@@ -10,5 +10,14 @@
 		?>
 	</header>
 <h1>Messages</h1>
-<p>messages will appear here<p>
+
+<ul>
+<?php
+foreach ($data as $value) {
+	echo('<li>' . $value . '</li>');
+}
+?>
+</ul>
+
+
 </body>

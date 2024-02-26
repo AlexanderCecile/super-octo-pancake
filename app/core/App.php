@@ -13,10 +13,13 @@ class App {
         $url = $_GET['url'];
 
         $routes = [
+            'Main'=>'Main,index',
         	'Main/index'=>'Main,index',
         	'Main/about_us'=>'Main,about_us',
+            'Contact'=>'Contact,index',
         	'Contact/index'=>'Contact,index',
         	'Contact/read'=>'Contact,read',
+            'Contact/send_msg'=>'Contact,send_msg',
         	'Count/index'=>'Count,index'
         ];
 

@@ -1,5 +1,4 @@
 <head>
-	<meta charset="utf-8">
 	<?php
 	readfile(__DIR__ . '/../Shared/external_deps.html');
 	?>

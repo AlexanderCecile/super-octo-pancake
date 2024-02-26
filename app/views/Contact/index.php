@@ -10,19 +10,28 @@
 		?>
 	</header>
 
-<h1>Contact us</h1>
-<p>Wanna reach us? write your email information and message in the following form and then submit</p>
+	<h1>Contact us</h1>
+	<p>Wanna reach us? write your email information and message in the following form and then submit</p>
 
-<form action="" method="post">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
+	<form action="/Contact/send_msg" method="post">
+		<ul>
+			<li>
+				<label for="name_input">Name: </label>
+				<input id="name_input" type="text" name="name">
+			</li>
+			<li>
+				<label for="email_input">Email: </label>
+				<input id="email_input" type="email" name="email">
+			</li>
+			<li>
+				<label for="msg_content_input">Message: </label>
+				<input id="msg_content_input" type="textarea" name="msg_content">
+			</li>
+			<li>
+				<input type="submit" value="Send">
+			</li>
+		</ul>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <br>
-
-        <input type="submit" value="Submit">
-    </form>
+	</form>
 
 </body>
